@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+$bg: #333;
+$white: #fff;
+$blue: #7BAFD4;
+$dblue1: #5598c7;
+$gray: #D3D3D3;
+$dblue2: #3a7faf;
+$del: #d47b83;
+$ddel1: #c7555f;
+$ddel2: #af3a44;
+$check: #e3eef6;
+$check2: #b6d3e7;
+$checkh1: #c5dcec;
+$check2h1: #9fc5df;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $bg;
+    color: $white;
+    font-family: 'Inter', sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#header {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#inputSect {
+    background-color: $gray;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    input {
+        border-radius: 5px;
+        border: none;
+        font-size: 25px;
+        padding: 10px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    #submitInput {
+        padding: 17px 35px;
+        border-radius: 10px;
+        border: none;
+        background-color: $blue;
+        color: $white;
+        font-weight: bold;
+        font-family: "Inter", sans-serif;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: $dblue1;
+        }
+
+        &:active {
+            background-color: $dblue2;
+        }
+    }
+}
+
+#tasks {
+    background-color: $gray;
+    width: 100%;
+    padding: 10px 20px;
+    transition: 1s;
+}
+
+#inputWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    background-color: $blue;
+    padding: 10px;
+    border-radius: 15px;;
+    margin-top: 10px;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.taskButton {
+    float: right;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: $del;
+    transition: 0.3s;
+    margin-left: auto;
+
+    &:hover {
+        background-color: $ddel1;
+    }
+
+    &:active {
+        background-color: $ddel2;
+    }
+}
+
+.taskText {
+    margin-left: 10px;
+    font-weight: bold;
+    float: left;
+}
+
+
+
